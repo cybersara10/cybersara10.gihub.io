@@ -12,17 +12,10 @@ body {
     font-family: "Nunito", sans-serif;
   }
   
-  @media (prefers-reduced-motion: no-preference) {
-    :root {
-      scroll-behavior: auto;
-    }
-  }
   a{
     text-decoration: none;
   }
-  /*--------------------------------------------------------------
-  # Back to top button
-  --------------------------------------------------------------*/
+
   .back-to-top {
     position: fixed;
     display: none;
@@ -76,10 +69,8 @@ body {
     }
   }
   
-  /*--------------------------------------------------------------
-  # Navigation Menu
-  --------------------------------------------------------------*/
-  /* Desktop Navigation */
+
+ 
   .nav-menu ul {
     margin: 0;
     padding: 0;
@@ -215,7 +206,7 @@ body {
     background: none;
     font-size: 24px;
     transition: all 0.4s;
-    outline: none !important;
+    outline: none ;
     line-height: 1;
     cursor: pointer;
     text-align: right;
@@ -241,7 +232,7 @@ body {
     padding: 10px 0;
   }
   
-  .mobile-nav * {
+  .mobile-nav  {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -386,7 +377,7 @@ body {
   }
   
   #hero .btn-get-started:hover {
-    background:  white;
+    background: d  white;
     border: 2px solid  white;
   }
   
@@ -400,10 +391,10 @@ body {
     #hero h3 {
       font-size: 22px;
     }
-    #hero h1 {
+    /*#hero h1 {
       font-size: 28px;
       line-height: 36px;
-    }
+    }*/
     #hero h2 {
       font-size: 18px;
       line-height: 24px;
@@ -423,10 +414,7 @@ body {
   section {
     padding: 60px 0;
   }
-  
-  .section-bg {
-    background-color: white;
-  }
+
   
   .section-title {
     text-align: center;
@@ -440,7 +428,7 @@ body {
     padding: 8px 20px;
     line-height: 1;
     margin: 0;
-    background: #fdeff2;
+    background:gray;
     color :white;
     display: inline-block;
     text-transform: uppercase;
@@ -468,135 +456,10 @@ body {
     }
   }
   
-  /*--------------------------------------------------------------
-  # About
-  --------------------------------------------------------------*/
-  .about .content h3 {
-    font-weight: 600;
-    font-size: 26px;
-  }
+ 
+
+
   
-  .about .content ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .about .content ul li {
-    padding-left: 28px;
-    position: relative;
-  }
-  
-  .about .content ul li + li {
-    margin-top: 10px;
-  }
-  
-  .about .content ul i {
-    position: absolute;
-    left: 0;
-    top: 2px;
-    font-size: 20px;
-    color:  white;
-    line-height: 1;
-  }
-  
-  .about .content p:last-child {
-    margin-bottom: 0;
-  }
-  
-  .about .content .btn-learn-more {
-    font-family: "Nunito", sans-serif;
-    font-weight: 600;
-    font-size: 14px;
-    letter-spacing: 1px;
-    display: inline-block;
-    padding: 12px 32px;
-    border-radius: 50px;
-    transition: 0.3s;
-    line-height: 1;
-    color:  white;
-    -webkit-animation-delay: 0.8s;
-    animation-delay: 0.8s;
-    margin-top: 6px;
-    border: 2px solid  white;
-  }
-  
-  .about .content .btn-learn-more:hover {
-    background:  white;
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  /*--------------------------------------------------------------
-  # Services
-  --------------------------------------------------------------*/
-  .services {
-    padding-bottom: 30px;
-  }
-  
-  .services .icon-box {
-    padding: 60px 30px;
-    position: relative;
-    overflow: hidden;
-    background: #fff;
-    box-shadow: 2px 0 35px 0 rgba(68, 88, 144, 0.12);
-    transition: all 0.3s ease-in-out;
-    border-radius: 8px;
-    z-index: 1;
-    text-align: center;
-  }
-  
-  .services .icon-box::before {
-    content: '';
-    position: absolute;
-    background: #fdeff2;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    top: 100%;
-    transition: all 0.4s;
-    z-index: -1;
-  }
-  
-  .services .icon-box:hover::before {
-    background: white;
-    top: 0;
-    border-radius: 0px;
-  }
-  
-  .services .icon {
-    margin-bottom: 15px;
-  }
-  
-  .services .icon i {
-    font-size: 48px;
-    line-height: 1;
-    color:  white;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .services .title {
-    font-weight: 700;
-    margin-bottom: 15px;
-    font-size: 18px;
-  }
-  
-  .services .title a {
-    color: #111;
-  }
-  
-  .services .description {
-    font-size: 15px;
-    line-height: 28px;
-    margin-bottom: 0;
-  }
-  
-  .services .icon-box:hover .title a, .services .icon-box:hover .description {
-    color: #fff;
-  }
-  
-  .services .icon-box:hover .icon i {
-    color: #fff;
-  }
   
   /*--------------------------------------------------------------
   # Features
@@ -642,7 +505,7 @@ body {
   .cta {
     background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.8)), url("../img/cta-bg.jpg") center center;
     background-size: cover;
-    padding: 60px 0;
+    padding: 200px 0;
   }
   
   .cta h3 {
@@ -654,21 +517,7 @@ body {
   .cta p {
     color: #fff;
   }
-  
-  .cta .cta-btn {
-    font-family: "Nunito", sans-serif;
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 16px;
-    letter-spacing: 1px;
-    display: inline-block;
-    padding: 8px 28px;
-    border-radius: 25px;
-    transition: 0.5s;
-    margin-top: 10px;
-    border: 2px solid #fff;
-    color: #fff;
-  }
+
   
   .cta .cta-btn:hover {
     background:  white;
@@ -681,181 +530,7 @@ body {
     }
   }
   
-  /*--------------------------------------------------------------
- ---------------------------------------------
-  # Pricing
-  --------------------------------------------------------------*/
-  .pricing .box {
-    padding: 20px;
-    background: #f9f9f9;
-    text-align: center;
-    border-radius: 8px;
-    position: relative;
-    overflow: hidden;
-    border: 2px solid #f9f9f9;
-  }
-  
-  .pricing .box h3 {
-    font-weight: 400;
-    padding: 15px;
-    margin-top: 15px;
-    font-size: 20px;
-    font-weight: 600;
-    color: #493c3e;
-  }
-  
-  .pricing .box h4 {
-    font-size: 42px;
-    color:  white;
-    font-weight: 500;
-    font-family: "Open Sans", sans-serif;
-    margin-bottom: 20px;
-  }
-  
-  .pricing .box h4 sup {
-    font-size: 20px;
-    top: -15px;
-    left: -3px;
-  }
-  
-  .pricing .box h4 span {
-    color: #bababa;
-    font-size: 16px;
-    font-weight: 300;
-  }
-  
-  .pricing .box ul {
-    padding: 0;
-    list-style: none;
-    color: #493c3e;
-    text-align: center;
-    line-height: 20px;
-    font-size: 14px;
-  }
-  
-  .pricing .box ul li {
-    padding-bottom: 16px;
-  }
-  
-  .pricing .box ul i {
-    color:  white;
-    font-size: 18px;
-    padding-right: 4px;
-  }
-  
-  .pricing .box ul .na {
-    color: #ccc;
-    text-decoration: line-through;
-  }
-  
-  .pricing .box .btn-wrap {
-    padding: 15px;
-    text-align: center;
-  }
-  
-  .pricing .box .btn-buy {
-    display: inline-block;
-    padding: 8px 40px 10px 40px;
-    border-radius: 50px;
-    border: 2px solid  white;
-    color:  white;
-    font-size: 14px;
-    font-weight: 400;
-    font-family: "Nunito", sans-serif;
-    font-weight: 600;
-    transition: 0.3s;
-  }
-  
-  .pricing .box .btn-buy:hover {
-    background:  white;
-    color: #fff;
-  }
-  
-  .pricing .recommended {
-    border-color: white;
-  }
-  
-  .pricing .recommended .btn-buy {
-    background:  white;
-    color: #fff;
-  }
-  
-  .pricing .recommended .btn-buy:hover {
-    background:  white;
-    border-color:  white;
-  }
-  
-  .pricing .recommended-badge {
-    position: absolute;
-    top: 5px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-    font-size: 13px;
-    padding: 3px 25px 6px 25px;
-    background: #fce6ea;
-    color:  white;
-    border-radius: 50px;
-  }
-  
-  /*--------------------------------------------------------------
-  # F.A.Q
-  --------------------------------------------------------------*/
-  .faq {
-    padding: 60px 0;
-  }
-  
-  .faq .faq-list {
-    padding: 0;
-    list-style: none;
-  }
-  
-  .faq .faq-list li {
-    padding: 0 0 20px 25px;
-  }
-  
-  .faq .faq-list a {
-    display: block;
-    position: relative;
-    font-family:  white;
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
-  }
-  
-  .faq .faq-list i {
-    font-size: 18px;
-    position: absolute;
-    left: -25px;
-    top: 6px;
-  }
-  
-  .faq .faq-list p {
-    margin-bottom: 20px;
-    font-size: 15px;
-  }
-  
-  .faq .faq-list a.collapse {
-    color:  white;
-  }
-  
-  .faq .faq-list a.collapsed {
-    color: #343a40;
-  }
-  
-  .faq .faq-list a.collapsed:hover {
-    color:  white;
-  }
-  
-  .faq .faq-list a.collapsed i::before {
-    content: "\eab2" !important;
-  }
-  
-  @media (min-width: 1280px) {
-    .faq .container {
-      padding: 0 120px;
-    }
-  }
+ 
   
   /*--------------------------------------------------------------
   # Team
@@ -938,7 +613,7 @@ body {
   }
   
   /*--------------------------------------------------------------
-  # Contact
+  # Contacts
   --------------------------------------------------------------*/
   .contact .info {
     width: 100%;
@@ -982,96 +657,26 @@ body {
     background:  white;
     color: #fff;
   }
-  
-  .contact .php-email-form {
-    width: 100%;
-    background: #fff;
+  .wavy{
+
+    position: relative;
+    -webkit-box-reflect: below -12px linear-gradient(
+      transparent, rgba(0,0,0,0.2));
   }
-  
-  .contact .php-email-form .form-group {
-    padding-bottom: 8px;
-  }
-  
-  .contact .php-email-form .validate {
-    display: none;
-    color: white;;
-    margin: 0 0 15px 0;
-    font-weight: 400;
-    font-size: 13px;
-  }
-  
-  .contact .php-email-form .error-message {
-    display: none;
-    color: #fff;
-    background: white;;
-    text-align: left;
-    padding: 15px;
-    font-weight: 600;
-  }
-  
-  .contact .php-email-form .error-message br + br {
-    margin-top: 25px;
-  }
-  
-  .contact .php-email-form .sent-message {
-    display: none;
-    color: #fff;
-    background: #18d26e;
-    text-align: center;
-    padding: 15px;
-    font-weight: 600;
-  }
-  
-  .contact .php-email-form .loading {
-    display: none;
-    background: #fff;
-    text-align: center;
-    padding: 15px;
-  }
-  
-  .contact .php-email-form .loading:before {
-    content: "";
+  .wavy span {
+
+    position: relative;
     display: inline-block;
-    border-radius: 50%;
-    width: 24px;
-    height: 24px;
-    margin: 0 10px -6px 0;
-    border: 3px solid #18d26e;
-    border-top-color: #eee;
-    -webkit-animation: animate-loading 1s linear infinite;
-    animation: animate-loading 1s linear infinite;
+    color: green;
+      font-family: IcoFont;
+    font-size:20px;
+    text-transform: uppercase;
+    animation: animate 2s ease-in-out infinite;
+    animation-delay: calc(0.1s * var(--i));
+
   }
-  
-  .contact .php-email-form input, .contact .php-email-form textarea {
-    border-radius: 0;
-    box-shadow: none;
-    font-size: 14px;
-  }
-  
-  .contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
-    border-color:  white;
-  }
-  
-  .contact .php-email-form input {
-    height: 44px;
-  }
-  
-  .contact .php-email-form textarea {
-    padding: 10px 12px;
-  }
-  
-  .contact .php-email-form button[type="submit"] {
-    background:  white;
-    border: 0;
-    padding: 10px 28px;
-    color: #fff;
-    transition: 0.4s;
-    border-radius: 50px;
-  }
-  
-  .contact .php-email-form button[type="submit"]:hover {
-    background:  white;;
-  }
+
+
   
   @-webkit-keyframes animate-loading {
     0% {
@@ -1089,64 +694,30 @@ body {
     100% {
       transform: rotate(360deg);
     }
+
+
   }
-  
-  /*--------------------------------------------------------------
-  # Breadcrumbs
-  --------------------------------------------------------------*/
-  .breadcrumbs {
-    padding: 15px 0;
-    background: #f6f4f4;
-    margin-top: 67px;
-  }
-  
-  @media (max-width: 992px) {
-    .breadcrumbs {
-      margin-top: 50px;
+   @keyframes animate
+   {
+    0%
+    {
+    transform: translateY(0PX);
     }
-  }
+    20%
+
+   {
+    transform: translateY(-20PX);
+    }
   
-  .breadcrumbs h2 {
-    font-size: 26px;
-    font-weight: 600;
-  }
-  
-  .breadcrumbs ol {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0 0 10px 0;
-    margin: 0;
-    font-size: 14px;
-  }
-  
-  .breadcrumbs ol li + li {
-    padding-left: 10px;
-  }
-  
-  .breadcrumbs ol li + li::before {
-    display: inline-block;
-    padding-right: 10px;
-    color: #655356;
-    content: "/";
-  }
-  
-  
-  
-  
-  #footer .social-links a {
-    font-size: 18px;
-    display: inline-block;
-    background: white;
-    color: #fff;
-    line-height: 1;
-    padding: 8px 0;
-    margin-right: 4px;
-    border-radius: 50%;
-    text-align: center;
-    width: 36px;
-    height: 36px;
-    transition: 0.3s;
-  }
+     40%, 100%
+     {
+      transform: translateY(0);
+     }
+
+    }
+
+
+
+
   
   
